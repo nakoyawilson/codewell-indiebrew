@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General */
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+/* Footer */
+.footer-container {
+    background-color: #FDFCF9;
+    display: flex;
+    flex-direction: column;
+    line-height: 2;
+    padding: 68px 20px;
+}
+
+.footer-text-heading {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.footer-text {
+    font-family: 'DM Sans', sans-serif;
+    padding-bottom: 32px;
+    color: #4F4F4F;
+}
+
+.made-by {
+    color: #4F4F4F;
+}
+
+.links {
+    padding-top: 50px;
+}
+
+.links-row {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 40px;
+}
+
+.links-heading {
+    font-size: 20px;
+    font-weight: 700;
+    color: #000;
+}
+
+li, li a {
+    font-size: 18px;
+    font-weight: 400;
+    color: #4F4F4F;
+}
+
+.attribution {
+    font-size: 14px;
+    font-weight: 300;
+    text-align: center;
+}
+
+.attribution a {
+    color: #664EFC;
+}
+/* Media Queries */
+@media (min-width: 576px) {
+    .footer-container {
+        flex-direction: row;
+        padding: 40px;
+    }
+
+    .footer-main-content {
+        flex: 1 1 0;
+    }
+
+    .links {
+        padding: 0;
+        flex: 1 1 0;
+    }
+}
+
+@media (min-width: 992px) {
+    .footer-main-content {
+        width: 381px;
+    }
+
+    .links-row {
+        display: inline-flex;
+    }
+
+    .links-section {
+        padding: 0 30px;
+    }
+}
